@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug (OpenOCD)",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "./main.elf",
+            "device": "STM32G031K8T6",
+            "configFiles": [
+                "${workspaceFolder}/device/openocd/openocd.cfg"
+            ],
+            "showDevDebugOutput": "none"
+        }
+    ]
+}
